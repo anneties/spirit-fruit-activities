@@ -38,8 +38,10 @@ footer {
   grid-column-end: 3;
   background-color: var(--white); }
 
-main > h1 {
-  text-align: center; }
+main {
+  margin-top: 3em; }
+  main > h1 {
+    text-align: center; }
 
 pre {
   font-size: 14px;

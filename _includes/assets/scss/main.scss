@@ -46,8 +46,11 @@ footer {
     background-color: var(--white);
 }
 
-main > h1 {
-    text-align: center;
+main {
+    margin-top: 3em;
+    > h1 {
+        text-align: center;
+    }
 }
 
 pre {
