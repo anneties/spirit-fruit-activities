@@ -3,9 +3,9 @@
   "version": "1.0.1",
   "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
-    "build": "npx eleventy",
-    "watch": "npx eleventy --watch",
-    "start": "npx eleventy --serve",
+    "build": "gulp & npx eleventy",
+    "watch": "gulp watch & npx eleventy --watch",
+    "start": "gulp watch & npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -30,6 +30,8 @@
   },
   "dependencies": {
     "clean-css": "^4.2.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
     "html-minifier": "^4.0.0",
     "uglify-es": "^3.3.9"
   }
