@@ -16,7 +16,7 @@ body {
 body {
   display: grid;
   height: 100vh;
-  grid-template-columns: auto 780px auto;
+  grid-template-columns: 1fr minmax(0, 50em) 1fr;
   background-color: var(--turkey); }
 
 p,
@@ -39,7 +39,8 @@ footer {
   background-color: var(--white); }
 
 main {
-  margin-top: 3em; }
+  margin: 3em 0;
+  padding: 3em; }
   main > h1 {
     text-align: center; }
 
@@ -77,6 +78,15 @@ button {
   background-color: var(--blue);
   color: var(--white);
   cursor: pointer; }
+
+.post {
+  display: flex; }
+
+.post__image {
+  flex-basis: 35%; }
+
+.post__content {
+  flex-basis: 65%; }
 
 @media screen and (min-width: 768px) {
   :root {
