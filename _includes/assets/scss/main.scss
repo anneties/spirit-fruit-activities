@@ -2,7 +2,8 @@
 	--turkey: #F7F7F7;
 	--white: white;
     --blue: blue;
-    --black: black;
+	--black: black;
+	--grey: #424242;
 }
 
 *, *:before, *:after {
@@ -20,7 +21,8 @@ body {
 	display: grid;
 	height: 100vh;
 	grid-template-columns: 1fr minmax(0, 50em) 1fr;
-    background-color: var(--turkey);
+	background-color: var(--turkey);
+	color: var(--grey);
 }
 
 p,
@@ -37,9 +39,7 @@ a[href]:not(:hover) {
 	text-decoration: none;
 }
 
-header,
-main,
-footer {
+main {
     padding: 1em;
     grid-column-start: 2;
     grid-column-end: 3;
