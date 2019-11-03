@@ -80,14 +80,32 @@ button {
   cursor: pointer; }
 
 .post {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
-.post__image {
-  flex-basis: 35%; }
+.post__title {
+  flex-basis: 100%; }
 
 .post__content {
+  display: flex; }
+
+.post__content-image-wrapper {
+  flex-basis: 35%;
+  padding: 1em; }
+
+.post__content-image {
+  width: 100%; }
+
+.post__content-text {
   flex-basis: 65%; }
 
-@media screen and (min-width: 768px) {
+.post__text {
+  flex-basis: 65%; }
+
+@media screen and (max-width: 768px) {
   :root {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .post__content {
+    flex-direction: column; }
+  .post__content-image-wrapper {
+    padding: 0; } }

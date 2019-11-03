@@ -8,6 +8,10 @@ section: post
 
   {{ layoutContent | safe }}
 
+  {% if post.data.image %}
+    <img class="post-image" src="{{ post.data.image }}" />
+  {% endif %}
+
   {% if tags %}
     <p>
     {% for tag in tags %}
